@@ -53,7 +53,7 @@
 
 %%% The "real" document content comes below...
 
-\title{Establishing the radiological inventory of TRIGA IPR-R1 and TRIGA Mainz nuclear reactors aiming the final decommissioing}
+\title{Establishing the radiological inventory of TRIGA IPR-R1 and TRIGA Mainz nuclear reactors aiming the final decommissionig (5 páginas)}
 \author{Vitor Vasconcelos Araújo Silva and Jörg Krämer}
 \date{} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
@@ -69,17 +69,33 @@ TRIGA reactors are running since 1958...
 
 The objective of this work is establish the radiological inventory of all components of the TRIGA IPR-R1 and TRIGA Mainz reactors in order to make viable the decommissioing process of these reactors.
 
+\textbf{NOTAS conversa com André: O edital pede alguma ligação com a experiência prévia do pesquisador. No meu caso, acoplamento. Pra isso, a ideia é fazer experimentos no TRIGA com os combustíveis instrumentados e, com os perfis levantados, poder fazer a validação do núcleo simulado por eles. \textit{Com a validação dos cálculos neutrônicos, é possível estabelecer que aqueles são os fluxos e, talvez, definir como fazer o inventário radiológico.}}
+
 \subsection{Specific objectives}
 
 The specific objectives can be presented as a list:
 \begin{itemize}
-\item Simulate the core of the two reactors by use of Monte Carlo based codes to establish the neutron historical neutron fluxes;
-\item Use the neutron flux to calculate activation of important materials of the reactors that might have become of radiological importance to the radiological inventory;
+  %\item Simulate the core of the two reactors by use of Monte Carlo based codes to establish the neutron historical neutron fluxes;
+  \item  Experimental measures of obtained with the use of instrumented fuel elements in order to obtain fuel temperatures and, inderectly, cladding and water temperatures in order to serve as reference for neutronics-thermal-hydraulics numerical simulations;
+  \item Simulate the core of TRIGA Mainz reactor by use of Monte Carlo based code with the expected/calculated current fuel mixture coupled with thermal-hydraulics CFD simulation to have an accurate feedback of water temperature in the neutronics. 
+\item In parallel, use the neutron flux to calculate activation of important materials of the reactors that might have become of radiological importance to the radiological inventory;
 \item Deplete the fission materials in order to obtain the most realistic neutron flux based on historical use of the reactors;
-\item Verify the calculations by comparison, having the cores of both reactores modelled and simulated with two diferent codes \cite{OpenMC2015} and [cite Mainz code];
+\item Validate the calculations with the experimental results
   \item Calculate the shielding properties of a tentative storage cask for TRIGA reactors.
   
 \end{itemize}
+
+For the coupling calculations the code to be used is \cite{OpenMC2015} and for radiological measurements the package \cite{SCALE_632}. OpenMC is a opensource software whereas SCALE has a different license but is already available in the Universität Johannes Gutenberg Mainz.
+
+\section{Outcome}
+
+Considering a periodo of 18 months, we expected to have one paper published and another submitted by the end of the collaboration. The first paper should present the results of the two cores - both TRIGA IPR-R1 and TRIGA Mainz - validated using two different Monte Calo codes, namely \cite[OpenMC]{OpenMC2015} and \cite[SCALE]{SCALE_632}. A second paper - and the main objective of the colaboraion proposed in this very document - is, based on the data obtained on the previous simulations, to depleted and burn simulated fissile material in order to establish for both reactors the current radiological inventory. These inventories, as explained earlier, are key to performe most of the tasks expected in a nuclear decommissioing process.
+
+\textbf{IMPORTANT}
+
+\textbf{Simulate only flux for both reactors might not be enough to have a paper published in a good journal. Perhaps, o more realistic expectation is to have the inventory as a first result and the shielding and its related tasks/simulations to a second paper. Two subsmissions in a 18 months period seems more realistic.}
+
+\section{Methodology}
 
 \section{Citations}
 
