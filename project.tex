@@ -30,6 +30,8 @@
 \usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
 \usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
 % These packages are all incorporated in the memoir class to one degree or another...
+% package for affiliations
+\usepackage{authblk}
 
 %%% HEADERS & FOOTERS
 \usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
@@ -54,7 +56,10 @@
 %%% The "real" document content comes below...
 
 \title{Establishing the radiological inventory of TRIGA IPR-R1 and TRIGA Mainz nuclear reactors aiming the final decommissionig (5 páginas)}
-\author{Vitor Vasconcelos Araújo Silva and Jörg Krämer}
+\author[1]{Vitor Vasconcelos Araújo Silva}
+\author[2]{Jörg Krämer}
+\affil[1]{CDTN}
+\affil[2]{Mainz}
 \date{} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
 
@@ -64,12 +69,15 @@
 \section{Introduction}
 
 TRIGA reactors are running since 1958...
+Many of them were succesfully decommissioned along the years, being the most recent example the FiR-1 TRIGA in Filand, decommissioned in 2014 \cite{Raty_Thesis_2020} following a solid methodology. Unfortunately, due to the very nature of research reactors to have theirs cores modified to accomodate different uses - these reactors are not called reserach reactor for no reason - the detailed history of core configurations are not available in most of the cases \cite[p. xxx]{Clean-up_CEA-e-DEN_2018}. With that in mind, this research project aims to answer that question taking in account the best-practices \cite{AIEA}, the established methodologies \cite{Raty_paper} but also make use of validated numerical simulations to achieve the radiological inventory of a TRIGA reactor in the most accurate level achievable.
 
 \section{Objectives}
 
 The objective of this work is establish the radiological inventory of all components of the TRIGA IPR-R1 and TRIGA Mainz reactors in order to make viable the decommissioing process of these reactors.
 
 \textbf{NOTAS conversa com André: O edital pede alguma ligação com a experiência prévia do pesquisador. No meu caso, acoplamento. Pra isso, a ideia é fazer experimentos no TRIGA com os combustíveis instrumentados e, com os perfis levantados, poder fazer a validação do núcleo simulado por eles. \textit{Com a validação dos cálculos neutrônicos, é possível estabelecer que aqueles são os fluxos e, talvez, definir como fazer o inventário radiológico.}}
+
+In order to show eventual influence of pulse operation mode on the fuel burning, it is important to take into account the less important contribution of delayed neutrons to the neutron flux as the amount U\textsuperscript{235} decreases as shown in \cite{Carvalho2024} and \cite{Carvalho2025} for mixed oxide fuels.
 
 \subsection{Specific objectives}
 
