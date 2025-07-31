@@ -55,7 +55,7 @@
 
 %%% The "real" document content comes below...
 
-\title{Establishing a joing methodology for obtaining the radiological inventory of TRIGA IPR-R1 and TRIGA Mainz nuclear reactors aiming the final decommissionig (5 páginas)}
+\title{Establishing a joint methodology for obtaining the radiological inventory of TRIGA IPR-R1 and TRIGA Mainz nuclear reactors aiming the final decommissionig (5 páginas)}
 \author[1]{Vitor Vasconcelos Araújo Silva}
 \author[2]{Jörg Krämer}
 \affil[1]{Centro de Desenvolvimento da Tecnologia Nuclear - CDTN/CNEN}
@@ -68,20 +68,33 @@
 
 \section{Introduction}
 
-TRIGA reactors are running since 1958...
-Many of them were succesfully decommissioned along the years, being the most recent example the FiR-1 TRIGA in Filand, decommissioned in 2014 \cite{Raty_Thesis_2020} following a solid methodology. Unfortunately, due to the very nature of research reactors to have theirs cores modified to accomodate different uses - these reactors are not called research reactor for no reason - the detailed history of core configurations are not available in most of the cases \cite[p. xxx]{Clean-up_CEA-e-DEN_2018}. With that in mind, this research project aims to answer that question taking in account the best-practices \cite{AIEA}, the established methodologies \cite{Raty_paper} but also make use of validated numerical simulations to achieve the radiological inventory of a TRIGA reactor in the most accurate level achievable.
+The decommissioning of a nuclear research reactor (RR) consists in a long set of procedures, foreseen in a legal framework, to return the operational site to (expectadelly) general use after the reactor shutdown. At first glance, it can be seen as an ordinary engineering project. However, it is a complex project and - specially for research reactors - involves an important amount of procedures which are of scientific research by nature. TRIGA reactors \cite{TRIGA} are a widely used safe-by-design type of research reactor aimed at training, research and isotopes production. That means that changes in core configuration for different kinds of scientific experiments are performed many times during the lifetime of the reactor. This very nature of TRIGA reactors brings challenges for the decommissioing due to the uncertainties in the changes of neutron flux during the years. The difficulties increase if the instrumentation of the reactor is limited, pushing operational personal and researches into developing methodologies to perform accurate calculations.
+
+Aware of that, the International Atomic Energy Agency (IAEA) increased in the recent years discussions about the subject of nuclear reseach reactors decommissioning by promoting conferences \cite{IAEA_PS_2025} and publishing or updating documentation on many aspects of decommissioning of research reactors \cite{IAEA_TRS_494_2024}.
+
+IAEA also have been promoting technical meetings on decommissioning topics, like \cite{3TM}. Besides that, operators and researchers working on research reactors keep working on improving knowledge and methodologies on different aspects of the decommissioning process \cite{a}. That statement is also true for TRIGA reactors \cite{b}.
+
+%TRIGA nuclear reactors are running since 1958...
+
+%Ideally, every research reactor should have a decommissioning plan. Although that statement holds nowadays, many TRIGA research reactors had their first criticality in early 60's, in most cases before the legal framework was established by the countries operating them. That lack of standard normative and procedures, lead to case-by-case
+
+
+Considering all difficulties presented, neverthless, many research reactors were succesfully decommissioned along the years, being the most recent example the FiR-1 TRIGA in Finland, decommissioned in 2014 \cite{Raty_Thesis_2020} following a solid methodology. Unfortunately, due to the very nature of research reactors to have theirs cores modified to accomodate different uses - these reactors are not called research reactor for no reason - the detailed history of core configurations are not available or are not easily obtained in most of the cases \cite[p. xxx]{Clean-up_CEA-e-DEN_2018}. With that in mind, this research project aims to answer that question taking in account the best-practices \cite{AIEA}, the established methodologies \cite{Raty_paper} but also make use of validated numerical simulations and experimental measurements to obtain the radiological inventory of TRIGA Mainz and TRIGA IPR-R1. That information is crucial for the safe decommissioning of the nuclear reactors. %: the radiological inventory of the reactor in the most accurate level achievable.
+
+
 
 
 
 \section{Objectives}
 
-The objective of this work is establish the radiological inventory of all components of the TRIGA IPR-R1 and TRIGA Mainz reactors in order to make viable the decommissioing process of these reactors.
+The objective of this work is establish the radiological inventory of all components of the TRIGA IPR-R1 and TRIGA Mainz reactors in order to make viable the decommissioing process of these reactors. 
 
-\textbf{NOTAS conversa com André: O edital pede alguma ligação com a experiência prévia do pesquisador. No meu caso, acoplamento. Pra isso, a ideia é fazer experimentos no TRIGA com os combustíveis instrumentados e, com os perfis levantados, poder fazer a validação do núcleo simulado por eles. \textit{Com a validação dos cálculos neutrônicos, é possível estabelecer que aqueles são os fluxos e, talvez, definir como fazer o inventário radiológico.}}
+%\textbf{NOTAS conversa com André: O edital pede alguma ligação com a experiência prévia do pesquisador. No meu caso, acoplamento. Pra isso, a ideia é fazer experimentos no TRIGA com os combustíveis instrumentados e, com os perfis levantados, poder fazer a validação do núcleo simulado por eles. \textit{Com a validação dos cálculos neutrônicos, é possível estabelecer que aqueles são os fluxos e, talvez, definir como fazer o inventário radiológico.}}
 
-In order to show eventual influence of pulse operation mode on the fuel burning, it is important to take into account the less important contribution of delayed neutrons to the neutron flux as the amount U\textsuperscript{235} decreases as shown in \cite{Carvalho_2024} and \cite{Carvalho_2025} for mixed oxide fuels.
 
 \subsection{Specific objectives}
+
+\textbf{NOTAS: VÃO SAIR DAQUI}
 
 The specific objectives can be presented as a list:
 \begin{itemize}
@@ -101,19 +114,34 @@ For the coupling calculations the code to be used is \cite{OpenMC_2015} and for 
 
 \section{Methodology}
 
-The two reactors targeted in this project have small but important differences. The TRIGA Mainz is a model 2, with the ability to operate in pulse mode and, critical for this project, with two instrumented fuel elements in its core. These fuel type elements are able to collect information about the temperature of the fuel and thus provide essential data for the validation of simulations. Moreover, it has its full operational history available, also essential information for obtaining the current composition of fuel elements and which are itself part of the radiological inventory.
+The two reactors targeted in this project have small but important differences. The TRIGA Mainz is a TRIGA Mark-2, a second version of TRIGAs, with the ability to operate in pulse mode and, critical for this project, with two instrumented fuel elements in its core. These fuel type elements are able to collect information about the temperature of the fuel and thus provide essential data for the validation of numerical simulations. Moreover, it has its full operational history available which is essential information for obtaining the current composition of fuel elements which are themselves part of the radiological inventory.
 
-The TRIGA IPR-R1 is the very first model of TRIGA reactors and is not designed for pulsed operation. In addition, the operational information is not complete. That said, the developed methodology is crucial to the validation of the source-term to be obtained by simulations. Simple put: the work that will support the calculation of the radiological inventory of TRIGA Mainz is more than supportive, but essential to perform the same calculations for the TRIGA IPR-R1.
+The TRIGA IPR-R1 is the very first model of TRIGA reactors and is not designed for pulsed operation. In addition, its complete operational information is not readly available That said, the developed methodology is crucial to the validation of the source-term to be obtained by numerical simulations. Simple put: with the collected operational information of TRIGA Mainz - specially including the fuel temperature measured by the two instrumented fuels - a computational model of the TRIGA Mainz reactor for coupled neutronic and thermal-hydraulic calculations can be validated. Since both reactors operated (mostly) at $100 kW$, the numerical model can be used to, considering water temperatures in TRIGA IPR-R1 operation, estimate the real power in which operates and also be compared to the calculations of power currently made. Nowadays, these calculations are made based on difference of water temperature and the associated error is estimated to be around 30\%.
 
 Gladly, despite different capabilites of the types 1 and 2 of TRIGA reactors, they are almost identical in their cores, making possible the use of the same calculations methodology to establish the current neutron flux of both reactors.
 
-Conversely, when considering the reactor pool, TRIGA Mainz has a more complex geometry due to its several neutron extractors (what makes the reactor way more useful for research and isotopes production). In the case of TRIGA IPR-R1, the reactor pool is simply dug into the ground with an aluminum pool built into a concrete covered excavation.
+The proposed methodology will allow for more precise calculation of power - closer to error in measurements in TRIGA Mainz - and thus the amount of fissile material burned which lead to lower error in the calculation of the radiological inventory of TRIGA IPR-R1.
+
+Also part of the methodology \cite[figura IAEA] is the depletion calculation based on reactors operational history. So, concurrently with the coupled calcultions to have a model of temperatures and neutron flux in the reactor, a set of depletion calculations will be calculated for the same numerical model. As recommended by IAEA \cite{descomissionamento}, the two types of numerical calculations are complementary in establishing the radiological inventory.
+
+Framed as a secondary task, the calculation of shielding by a proposed spent fuel packaging with make used of the previous calculations as a source-term and will be carried on for the TRIGA Mainz fuels also using shielding tools available in \cite{SCALE_632}. For TRIGA IPR-R1 the idea is to use \cite[OpenMC]{OpenMC_2015} to perform shielding calculations \cite{Pineda_2025} also as a secondary task. Last, but not least, since the TRIGA Mainz reactor regularly operates in pulsed mode, to show eventual influence of that operation on the fuel burning, it is important to take into account the less important contribution of delayed neutrons to the neutron flux as the amount U\textsuperscript{235} decreases as shown in \cite{Carvalho_2024} and \cite{Carvalho_2025} for mixed oxide fuels.
+
+
+It is important to note that the main differences between TRIGA Mainz and TRIGA IPR-R1 are on the geometry of the pool where the reactors are located. These differences will add complexity to the activation calculations for the TRIGA Mainz, which has more structures around the pool. These differences, however, do not interfere with the previous steps in the methodology which is focused on the space (or geometry) and structures withn the pool.
+
+%Conversely, when considering the reactor pool, TRIGA Mainz has a more complex geometry due to its several neutron extractors (what makes the reactor way more useful for research and isotopes production). In the case of TRIGA IPR-R1, the reactor pool is simply dug into the ground with an aluminum pool built into a concrete covered excavation.
 
 \textbf{[fotos dos dois TRIGAS]}
 
 \section{Outcome}
 
-Considering a periodo of 18 months, we expected to have one paper published and another submitted by the end of the collaboration. The first paper should present the results of the two cores - both TRIGA IPR-R1 and TRIGA Mainz - validated using two different Monte Calo codes, namely \cite[OpenMC]{OpenMC_2015} and \cite[SCALE]{SCALE_632}. A second paper - and the main objective of the colaboraion proposed in this very document - is, based on the data obtained on the previous simulations, to depleted and burn simulated fissile material in order to establish for both reactors the current radiological inventory. These inventories, as explained earlier, are key to performe most of the tasks expected in a nuclear decommissioing process.
+Considering a period of 18 months, we expected to have one paper published and another submitted by the end of the collaboration. The first paper should present the results of the neutronics and thermal-hydraulics calculations for the core and pool of TRIGA Mainz validated with the measurements within the reactor for \cite[OpenMC]{OpenMC_2015} Monte Carlo code and the tools provided by the software package \cite[SCALE]{SCALE_632}.
+
+%two cores - both TRIGA IPR-R1 and TRIGA Mainz - validated using two different Monte Calo codes, namely \cite[OpenMC]{OpenMC_2015} and \cite[SCALE]{SCALE_632}.
+
+A second paper - and the second main objective of the colaboration proposed in this partnership - is, based on the data obtained on the previous simulations, to calculate the depletetion and burning of fissile material in order to establish the current radiological inventory of TRIGA Mainz. The same calculations will be carried on for TRIGA IPR-R1 after the end of the proposed project.
+
+The radiological inventories, as explained earlier, are key to perform most of the procedures expected in a nuclear reseach reactor decommissioning process.
 
 \textbf{IMPORTANT}
 
